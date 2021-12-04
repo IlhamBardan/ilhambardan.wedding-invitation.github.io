@@ -37,3 +37,19 @@
     });
   });
 })();
+
+// Google Map
+//-6.529437939479915, 107.39507245777736
+// -6.5295298273255495, 107.39471039114086
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    mapId: "9ab6c594f3acee37",
+    center: { lat: -6.5295298273255495, lng: 107.39471039114086 },
+    zoom: 18,
+  });
+  // Marker Map
+  marker = new google.maps.Marker({
+    position: { lat: -6.529437939479915, lng: 107.39507245777736 },
+    map,
+  });
+}
