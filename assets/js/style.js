@@ -102,12 +102,12 @@ function initMap() {
   const gallery = document.querySelectorAll(".gallery-box");
 
   parent.forEach((parent, i) => {
-    parent.dataset.aos = "zoom-in";
+    parent.dataset.aos = "fade-down";
     parent.dataset.aosDelay = i * 200;
   });
 
   friend.forEach((friend, i) => {
-    friend.dataset.aos = "zoom-in";
+    friend.dataset.aos = "fade-down";
     friend.dataset.aosDelay = i * 500;
   });
 
