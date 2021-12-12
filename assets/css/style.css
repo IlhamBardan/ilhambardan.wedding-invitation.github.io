@@ -20,16 +20,16 @@ body {
 .cover {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 /* Global Section */
 :root {
-  --favorite-color: #00e61f;
   --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
   --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
   --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
   --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
+  --text-brown: #8c6644;
 }
 
 img {
@@ -82,12 +82,12 @@ img {
   font-weight: 700;
   text-transform: capitalize;
   letter-spacing: 5px;
-  color: #fff;
+  color: var(--text-brown);
 }
 
 .page-title h2::before {
   content: attr(data-heading);
-  font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script";
   display: block;
   font-size: 20px;
   color: palevioletred;
@@ -117,6 +117,7 @@ img {
 
 .home-text {
   margin-top: 100px;
+  color: var(--text-brown);
 }
 
 .home-text h1 {
@@ -124,12 +125,14 @@ img {
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: capitalize;
+  padding: 12px;
   text-shadow: 10px 10px 10px #000;
 }
 
-.home-text i {
+.home-text h2 i {
   font-size: 39px;
   text-shadow: 3px 3px 3px red;
+  padding: 12px;
 }
 
 .home-page .clock {
@@ -139,7 +142,7 @@ img {
   background: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .home-page .clock .container-clock {
@@ -169,9 +172,9 @@ img {
   padding: 80px 0 80px;
   min-height: 100vh;
 }
-.moment-page .page-title p {
+.moment-page .quote-text h3 {
   font-size: 18px;
-  color: #fff;
+  color: var(--text-brown);
 }
 
 .moment-page .moment-img,
@@ -200,9 +203,9 @@ img {
 .moment-page .moment-text-bride h1,
 .moment-page .moment-text-groom h1 {
   font-size: 45px;
-  font-weight: 500;
+  font-weight: 700;
   font-family: "Dancing Script";
-  color: #fff;
+  color: var(--text-brown);
   text-transform: capitalize;
   text-align: center;
   letter-spacing: 2px;
@@ -213,6 +216,7 @@ img {
   height: 250px;
   padding: 15px 30px;
   background: rgba(255, 255, 255, 0.25);
+  border: 1px solid var(--text-brown);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-radius: 25px;
@@ -221,7 +225,7 @@ img {
 .moment-page .moment-info h3 {
   font-size: 16px;
   text-align: center;
-  color: #f8f8f8;
+  color: var(--text-brown);
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 9.5px;
@@ -232,13 +236,13 @@ img {
   margin-bottom: 7px;
   margin-top: 7px;
   text-align: center;
-  color: #fff;
+  color: var(--text-brown);
   text-transform: capitalize;
 }
 
 .moment-page .moment-info p span {
   font-size: 24px;
-  color: aqua;
+  color: var(--text-brown);
   font-weight: 700;
   letter-spacing: 5px;
   text-transform: capitalize;
@@ -263,10 +267,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--favorite-color);
+  background: var(--text-brown);
   border-radius: 50%;
   font-size: 1.5em;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -287,6 +291,7 @@ img {
   width: 100%;
   height: 300px;
   background: rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--text-brown);
   border-radius: 20px;
   box-shadow: 0 25px 50px rgba(255, 255, 255, 0.17);
 }
@@ -316,7 +321,8 @@ img {
   position: absolute;
   width: 150%;
   height: 40px;
-  background: var(--favorite-color);
+  background: var(--text-brown);
+  color: #fff;
   transform: rotate(-45deg) translateY(-20px);
   display: flex;
   justify-content: center;
@@ -333,7 +339,8 @@ img {
   position: absolute;
   width: 150%;
   height: 40px;
-  background: var(--favorite-color);
+  background: var(--text-brown);
+  color: #fff;
   transform: rotate(45deg) translateY(-20px);
   display: flex;
   justify-content: center;
@@ -351,10 +358,10 @@ img {
   left: 0;
   width: 10px;
   height: 10px;
-  background: var(--favorite-color);
+  background: #62452a;
   z-index: -1;
   /* for box-shadow Height span - height span:after -> 150px - 10px = 140px */
-  box-shadow: 140px -140px var(--favorite-color);
+  box-shadow: 140px -140px #62452a;
 }
 .ribbon-right span::after {
   content: "";
@@ -363,10 +370,10 @@ img {
   right: 0;
   width: 10px;
   height: 10px;
-  background: var(--favorite-color);
+  background: #62452a;
   z-index: -1;
   /* for box-shadow Height span - height span:after -> 150px - 10px = 140px */
-  box-shadow: -140px -140px var(--favorite-color);
+  box-shadow: -140px -140px #62452a;
 }
 
 .event-page .c-icon-right,
@@ -394,28 +401,26 @@ img {
   color: #000;
 }
 
-.event-page .c-icon-right li i {
+.event-page .c-icon-right li i,
+.event-page .c-icon-left li i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 45px;
   height: 45px;
   padding: 9px 8px;
-  margin-right: 9px;
-  background: var(--favorite-color);
+  background: var(--text-brown);
   border-radius: 50%;
   font-size: 1.5em;
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
+.event-page .c-icon-right li i {
+  margin-right: 9px;
+}
 .event-page .c-icon-left li i {
-  width: 45px;
-  height: 45px;
-  padding: 9px 8px;
   margin-left: 9px;
-  background: var(--favorite-color);
-  border-radius: 50%;
-  font-size: 1.5em;
-  color: #000;
-  text-decoration: none;
 }
 
 .event-page .map-box {
@@ -425,20 +430,22 @@ img {
   margin: auto;
   padding: 15px;
   background: rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--text-brown);
   border-radius: 15px;
 }
 
 .event-page .map-box h2 {
   display: flex;
   font-size: 18px;
-  color: #000;
-  font-weight: 400;
+  color: var(--text-brown);
+  font-weight: 600;
   align-items: center;
 }
 
 .event-page .map-box h2 i {
   padding: 20px;
-  background: var(--favorite-color);
+  background: var(--text-brown);
+  color: #fff;
   border-radius: 50%;
   width: 24px;
   height: 24px;
@@ -458,7 +465,7 @@ img {
   padding: 7px 20px;
   font-size: 18px;
   font-weight: 700;
-  color: var(--text-dark-300);
+  color: var(--text-brown);
   background-color: transparent;
   line-height: 1.5;
   cursor: pointer;
@@ -470,7 +477,7 @@ img {
 }
 
 .btn-sample:hover {
-  color: #50e3c2;
+  color: #62452a;
 }
 
 .btn-sample::after {
@@ -495,7 +502,7 @@ img {
   height: 100%;
   left: 50%;
   top: 0;
-  background-color: #fff;
+  background-color: var(--text-brown);
   position: absolute;
 }
 
@@ -518,23 +525,24 @@ img {
   padding: 30px;
   border-radius: 5px;
   position: relative;
+  border: 2px solid var(--text-brown);
 }
 
 .story-page .story .story-item-inner::before {
   content: "";
   position: absolute;
-  width: 30px;
+  width: 31px;
   height: 1px;
-  background-color: #fff;
+  background-color: var(--text-brown);
   top: 37px;
 }
 
 .story-page .story .story-item:nth-child(odd) .story-item-inner::before {
-  right: -30px;
+  right: -33px;
 }
 
 .story-page .story .story-item:nth-child(even) .story-item-inner::before {
-  left: -30px;
+  left: -32px;
 }
 
 .story-page .story .story-item-inner .icon {
@@ -542,26 +550,26 @@ img {
   width: 40px;
   background-color: #fff;
   text-align: center;
-  border: 1px solid #fff;
+  border: 1px solid var(--text-brown);
   line-height: 40px;
   border-radius: 50%;
-  color: var(--favorite-color);
+  color: pink;
   font-size: 16px;
   position: absolute;
   top: 18px;
 }
 
 .story-page .story .story-item:nth-child(odd) .icon {
-  right: -70px;
+  right: -73px;
 }
 
 .story-page .story .story-item:nth-child(even) .icon {
-  left: -70px;
+  left: -72px;
 }
 
 .story-page .story .story-item-inner span {
-  font-weight: 500;
-  color: var(--favorite-color);
+  font-weight: 700;
+  color: #000;
   display: block;
   margin: 0 0 10px;
   text-transform: capitalize;
@@ -570,15 +578,16 @@ img {
 .story-page .story .story-item-inner h3 {
   font-size: 20px;
   text-transform: capitalize;
+  font-weight: 700;
   margin: 0 0 5px;
-  color: var(--favorite-color);
+  color: #000;
   letter-spacing: 2px;
   text-transform: capitalize;
 }
 
 .story-page .story .story-item-inner p {
   font-size: 16px;
-  color: #fff;
+  color: var(--text-brown);
   line-height: 26px;
   margin: 15px 0 0;
   letter-spacing: 0.1px;
@@ -614,14 +623,14 @@ img {
 
 .guest-page .guest-text h1 {
   font-size: 24px;
-  color: var(--favorite-color);
+  color: var(--text-brown);
   text-transform: capitalize;
   text-align: center;
 }
 
 .guest-page .guest-text p {
   font-size: 18px;
-  color: #fff;
+  color: #000;
   text-transform: capitalize;
   text-align: center;
   letter-spacing: 1.5px;

@@ -53,3 +53,71 @@ function initMap() {
     map,
   });
 }
+
+// Anime JS
+(() => {
+  const satu = document.getElementById("satu");
+  const dua = document.getElementById("dua");
+  const tiga = document.getElementById("tiga");
+
+  anime({
+    targets: satu,
+    opacity: [0, 1],
+    translateX: [-550, 0],
+    duration: 1000, // 1 second
+    delay: 500,
+  });
+  anime({
+    targets: dua,
+    opacity: [0, 1],
+    translateX: [-550, 0],
+    duration: 1000, // 1 second
+    delay: 800,
+  });
+  anime({
+    targets: tiga,
+    opacity: [0, 1],
+    translateX: [-550, 0],
+    duration: 1000, // 1 second
+    delay: 1000,
+  });
+})();
+
+(() => {
+  anime({
+    targets: ".clock",
+    scale: [
+      { value: 0.1, easing: "easeOutSine", duration: 700 },
+      { value: 1, easing: "easeInOutQuad", duration: 1200 },
+    ],
+    opacity: [0, 1],
+    delay: anime.stagger(200, { grid: [14, 5], from: "center" }),
+  });
+})();
+
+// AOS
+(() => {
+  const parent = document.querySelectorAll(".parent");
+  const friend = document.querySelectorAll(".friend");
+  const gallery = document.querySelectorAll(".gallery-box");
+
+  parent.forEach((parent, i) => {
+    parent.dataset.aos = "zoom-in";
+    parent.dataset.aosDelay = i * 200;
+  });
+
+  friend.forEach((friend, i) => {
+    friend.dataset.aos = "zoom-in";
+    friend.dataset.aosDelay = i * 500;
+  });
+
+  gallery.forEach((gallery, i) => {
+    gallery.dataset.aos = "fade-down";
+    gallery.dataset.aosDelay = i * 500;
+  });
+
+  AOS.init({
+    once: true,
+    duration: 2000,
+  });
+})();

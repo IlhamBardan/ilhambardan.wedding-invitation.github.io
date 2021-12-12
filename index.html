@@ -11,6 +11,9 @@
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="assets/vendor/fontawesome-free-5.15.4-web/css/all.min.css" />
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -51,8 +54,10 @@
         <div class="container">
           <div class="row text-center">
             <!-- Bride and Groom Name -->
-            <div class="home-text">
-              <h1>Ahmed Muhammad <br /><i class="fas fa-heart text-danger"></i><br />Iris Octavian</h1>
+            <div class="home-text easing-">
+              <h1 id="satu">Ahmed Muhammad</h1>
+              <h2 id="dua"><i class="fas fa-heart text-danger"></i></h2>
+              <h1 id="tiga">Iris Octavian</h1>
             </div>
           </div>
           <!-- Wedding StopWatch -->
@@ -80,16 +85,23 @@
           <div class="row">
             <div class="page-title text-center">
               <h2 data-heading="our moment" class="mb-4">quote</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque molestiae ipsa nobis quidem, qui, tempora, quas rem officia sed a asperiores atque placeat reprehenderit sunt doloremque velit ipsum corrupti hic similique.
-                Corporis harum odio suscipit laudantium earum, minus porro non laborum esse magnam tempora nostrum adipisci maxime modi dolorum, quisquam consequuntur tempore ratione repellendus fuga! Aspernatur maiores distinctio autem
-                repellat delectus suscipit laborum earum perspiciatis tempora saepe, atque est et.
-              </p>
             </div>
           </div>
+          <div class="row justify-content-center text-center">
+            <div class="quote-text">
+              <div class="col" data-aos="fade-down" data-aos-duration="1000">
+                <h3>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque molestiae ipsa nobis quidem, qui, tempora, quas rem officia sed a asperiores atque placeat reprehenderit sunt doloremque velit ipsum corrupti hic similique.
+                  Corporis harum odio suscipit laudantium earum, minus porro non laborum esse magnam tempora nostrum adipisci maxime modi dolorum, quisquam consequuntur tempore ratione repellendus fuga! Aspernatur maiores distinctio autem
+                  repellat delectus suscipit laborum earum perspiciatis tempora saepe, atque est et.
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!-- Bridegroom -->
           <div class="row justify-content-center mt-5">
             <!-- Bride Image -->
-            <div class="col-md-6 mb-5">
+            <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-duration="2000">
               <div class="moment-img">
                 <h1>bride</h1>
                 <div class="img-box">
@@ -112,7 +124,7 @@
               </div>
             </div>
             <!-- Groom Image -->
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500">
               <div class="moment-img">
                 <h1>groom</h1>
                 <div class="img-box">
@@ -149,7 +161,7 @@
           </div>
           <!-- Save The Date -->
           <div class="row justify-content-center">
-            <div class="col-md-5 mb-5">
+            <div class="col-md-5 mb-5" data-aos="fade-down-right" data-aos-duration="1000">
               <div class="ribbon-left blur-15">
                 <div class="ribbon-title">
                   <span data-span="akad nikah"></span>
@@ -161,7 +173,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="200">
               <div class="ribbon-right blur-15">
                 <div class="ribbon-title">
                   <span data-span="resepsi"></span>
@@ -176,7 +188,7 @@
           </div>
           <!-- Event Location -->
           <div class="row justify-content-center mt-5">
-            <div class="col">
+            <div class="col" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000">
               <div class="map-box blur-10">
                 <h2><i class="fas fa-map-marker-alt"></i>Event Location</h2>
                 <div id="map"></div>
@@ -202,7 +214,7 @@
             <div class="story">
               <div class="row">
                 <!-- Story Item Start -->
-                <div class="story-item">
+                <div class="story-item" data-aos="fade-right" data-aos-duration="1000">
                   <div class="story-item-inner outer-shadow blur-15">
                     <i class="fas fa-heart icon"></i>
                     <span>Feb 15th, 2019</span>
@@ -213,7 +225,7 @@
                 <!-- Story Item End -->
 
                 <!-- Story Item Start -->
-                <div class="story-item">
+                <div class="story-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
                   <div class="story-item-inner outer-shadow blur-15">
                     <i class="fas fa-heart icon"></i>
                     <span>feb 21st, 2019</span>
@@ -224,7 +236,7 @@
                 <!-- Story Item End -->
 
                 <!-- Story Item Start -->
-                <div class="story-item">
+                <div class="story-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
                   <div class="story-item-inner outer-shadow blur-15">
                     <i class="fas fa-heart icon"></i>
                     <span>may 15th, 2020</span>
@@ -235,7 +247,7 @@
                 <!-- Story Item End -->
 
                 <!-- Story Item Start -->
-                <div class="story-item">
+                <div class="story-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1500">
                   <div class="story-item-inner outer-shadow blur-15">
                     <i class="fas fa-heart icon"></i>
                     <span>may 20th, 2020</span>
@@ -246,7 +258,7 @@
                 <!-- Story Item End -->
 
                 <!-- Story Item Start -->
-                <div class="story-item">
+                <div class="story-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">
                   <div class="story-item-inner outer-shadow blur-15">
                     <i class="fas fa-heart icon"></i>
                     <span>may 25th, 2020</span>
@@ -257,7 +269,7 @@
                 <!-- Story Item End -->
 
                 <!-- Story Item Start -->
-                <div class="story-item">
+                <div class="story-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2500">
                   <div class="story-item-inner outer-shadow blur-15">
                     <i class="fas fa-heart icon"></i>
                     <span>dec 15th, 2020</span>
@@ -283,10 +295,10 @@
           </div>
           <div class="row justify-content-center">
             <div class="col-md-6">
-              <h2 class="text-center text-light mt-5 outer-shadow">The Bride's Parents</h2>
+              <h2 class="text-center mt-5 outer-shadow" style="color: var(--text-brown)">The Bride's Parents</h2>
               <div class="row justify-content-center">
                 <!-- Bride Parent Mom -->
-                <div class="col">
+                <div class="col" data-aos="zoom-in" data-aos-duration="1000">
                   <div class="guest-img">
                     <div class="img-box">
                       <img src="assets/img/special_guest/brideP/momB.jpg" alt="" />
@@ -298,7 +310,7 @@
                   </div>
                 </div>
                 <!-- Bride Parent Father -->
-                <div class="col">
+                <div class="col" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                   <div class="guest-img">
                     <div class="img-box">
                       <img src="assets/img/special_guest/brideP/fatherB.jpg" alt="" />
@@ -312,10 +324,10 @@
               </div>
             </div>
             <div class="col-md-6">
-              <h2 class="text-center text-light mt-5 outer-shadow">The Groom's Parents</h2>
+              <h2 class="text-center mt-5 outer-shadow" style="color: var(--text-brown)">The Groom's Parents</h2>
               <div class="row justify-content-center mb-3">
                 <!-- Bride Parent Mom -->
-                <div class="col">
+                <div class="col parent">
                   <div class="guest-img">
                     <div class="img-box">
                       <img src="assets/img/special_guest/groomP/motherG.jpg" alt="" />
@@ -327,7 +339,7 @@
                   </div>
                 </div>
                 <!-- Bride Parent Father -->
-                <div class="col">
+                <div class="col parent">
                   <div class="guest-img">
                     <div class="img-box">
                       <img src="assets/img/special_guest/groomP/fatherG.jpg" alt="" />
@@ -343,10 +355,10 @@
           </div>
           <div class="row justify-content-center">
             <div class="col">
-              <h2 class="text-center text-light mb-3 mt-5 outer-shadow">Our Friend</h2>
+              <h2 class="text-center mb-3 mt-5 outer-shadow" style="color: var(--text-brown)">Our Friend</h2>
               <div class="row justify-content-center">
                 <!-- Friend Image -->
-                <div class="col">
+                <div class="col friend">
                   <div class="guest-img">
                     <div class="img-box">
                       <img src="assets/img/gallery/gallery-4.jpg" alt="friend-1" />
@@ -363,7 +375,7 @@
                   </div>
                 </div>
                 <!-- Friend Image -->
-                <div class="col">
+                <div class="col friend">
                   <div class="guest-img">
                     <div class="img-box">
                       <img src="" alt="friend-2" />
@@ -380,7 +392,7 @@
                   </div>
                 </div>
                 <!-- Friend Image -->
-                <div class="col">
+                <div class="col friend">
                   <div class="guest-img">
                     <div class="img-box">
                       <img src="" alt="friend-3" />
@@ -397,7 +409,7 @@
                   </div>
                 </div>
                 <!-- Friend Image -->
-                <div class="col">
+                <div class="col friend">
                   <div class="guest-img">
                     <div class="img-box">
                       <img src="" alt="friend-4" />
@@ -498,7 +510,7 @@
     </header>
     <!-- Footer Page -->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 px-3 border-top bg-dark">
-      <p class="col-md-4 mb-0 text-muted text-capitalize">created by ilham bardan &copy; 2021</p>
+      <p class="col-md-4 mb-0 text-muted text-capitalize">&copy; Lorem, ipsum dolor. 2021</p>
       <a href="#" class="logo col-md-4 d-flex align-items-center justify-content-center mb-0 mb-md-0 me-md-auto link-dark text-decoration-none">
         <img src="assets/img/CreatorLogo/DansStudio.PNG" alt="" />
       </a>
@@ -524,6 +536,12 @@
 
     <!-- Google Map Javascript API -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgD2Xfz7QrrqMH5LEvBlr-qSWQ4ECI7f8&callback=initMap&v=weekly" async></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Anime JS -->
+    <script src="assets/js/anime.min.js"></script>
 
     <!-- Custom Javascript -->
     <script src="assets/js/style.js"></script>
